@@ -17,18 +17,54 @@
 # CRUD API Link & Working:
   >>USER Register :POST API --   localhost:3000/user/add
 * Here you can register yourself and you can add orgnaization its optional 
+* 1. you have to fill a unique username which is required
+* 2. you have to fill your firstname which is required
+* 3. you have to fill your lastname which is required
+* 4. you have to fill your email which is required
+* 5. you have to fill your password which is required
+* 6. you have to fill orgnaization name which is optional 
+## you have to fill address which is optional if you entered any field then all field will required
+* 1. you have to fill addressLine1 which is required
+* 2. you have to fill addressLine1 which is optional
+* 3. you have to fill city which is required
+* 4. you have to fill state which is required
+* 5. you have to fill country which is required
+* 6. you have to fill zipcode which is required
     
   >>USER LOGIN : POST API -- localhost:3000/user/login
-* Here you can login from username and password
+* Here you can login from username and password 
+* 1. you have to fill a  username which is required
+* 2. you have to fill your password which is required
 
   >>USER ORGNAIZATION ADD : POST API -- localhost:3000/org/add
-* After login you can add your orgnaization as many as you can 
+* After login token genrated and through token  you can add your orgnaization as many as you can 
+* a. you have to fill orgnaization name which is optional 
+## you have to fill address which is optional if you entered any field then all field will required
+* 1. you have to fill addressLine1 which is required
+* 2. you have to fill addressLine1 which is optional
+* 3. you have to fill city which is required
+* 4. you have to fill state which is required
+* 5. you have to fill country which is required
+* 6. you have to fill zipcode which is required
 
   >>USER ORGNAIZATION LIST : GET API --  localhost:3000/org/list
-* Here you can have your all orgnaization list 
+* Here you can have your all orgnaization list through token you can get your all orgnaization list
 
   >>USER PROFILE UPDATE : PUT API -- localhost:3000/user/update
 * Here you can update only your profile
+* 1. you have to fill a unique username you cannot enter same username in this field you have to fill another unique username which is required
+* 2. you have to fill your firstname which is optional but not empty
+* 3. you have to fill your lastname which is optional but not empty
+* 4. you have to fill your email which is optional but not empty
+* 5. you have to fill your password which is optional if you have access to update password you can update
 
   >>USER ORGNAIZATION UPDATE : PUT API -- localhost:3000/org/list/update/:id
 * Here you can update your orgnaization
+* a. you have to fill orgnaization name which is optional 
+## you have to fill address which is optional if you entered any field then all field will required
+* 1. you have to fill addressLine1 which is required
+* 2. you have to fill addressLine1 which is optional
+* 3. you have to fill city which is required
+* 4. you have to fill state which is required
+* 5. you have to fill country which is required
+* 6. you have to fill zipcode which is required

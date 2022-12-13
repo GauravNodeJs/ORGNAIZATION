@@ -19,8 +19,8 @@ class UserService {
       
       const addOrg = {
         userId: myData._id,
-        orgName: req.body.orgName,
-        address:req.body.address,
+        orgName: req.body.orgnaization.orgName,
+        address:req.body.orgnaization.address,
         changePassword:req.body.changePassword
       };
 

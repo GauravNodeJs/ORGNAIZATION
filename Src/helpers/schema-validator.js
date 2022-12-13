@@ -7,15 +7,18 @@ const validation = joi.object({
     password: joi.string().min(8).required(),
     email: joi.string().email().required(),
     changePassword:joi.boolean().optional(),
-    address:joi.object({
+    orgnaization:joi.object({
         orgName:joi.string().required(),
-        addressLine1:joi.string().required(),
-        addressLine2:joi.string().required(),
-        city:joi.string().required(),
-        state:joi.string().required(),
-        country:joi.string().required(),
-        zipCode:joi.number().required(),
+        address:joi.object({
+            addressLine1:joi.string().required(),
+            addressLine2:joi.string().required(),
+            city:joi.string().required(),
+            state:joi.string().required(),
+            country:joi.string().required(),
+            zipCode:joi.number().required(),
+        }).optional()
     }).optional()
+    
 });
 const loginValidation=joi.object({
     userName: joi.string().min(3).max(10).trim(true).required(),
