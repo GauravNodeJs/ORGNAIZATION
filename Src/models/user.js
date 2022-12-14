@@ -29,7 +29,7 @@ const userSchema = new Schema({
     },
     changePassword:{
         type:Boolean,
-        default:false
+        required:false
     }
 },
     { timestamps: true }

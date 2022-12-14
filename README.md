@@ -39,7 +39,7 @@
   ## USER ORGNAIZATION ADD : POST API -- localhost:3000/org/add
 * After login token genrated and through token  you can add your orgnaization as many as you can 
 * a. you have to fill orgnaization name which is optional 
-* you have to fill address which is optional if you entered any field then all field will required
+* you have to fill address which is optional if you entered any field then all field will required the last orgnaization you add it will be default active
 * 1. you have to fill addressLine1 which is required
 * 2. you have to fill addressLine1 which is optional
 * 3. you have to fill city which is required
@@ -49,6 +49,7 @@
 
   ## USER ORGNAIZATION LIST : GET API --  localhost:3000/org/list
 * Here you can have your all orgnaization list through token you can get your all orgnaization list
+* You can view which orgnaization is currently active 
 
   ## USER PROFILE UPDATE : PUT API -- localhost:3000/user/update
 * Here you can update only your profile
@@ -61,7 +62,7 @@
   ## USER ORGNAIZATION UPDATE : PUT API -- localhost:3000/org/list/update/:id
 * Here you can update your orgnaization
 * a. you have to fill orgnaization name which is optional 
-* you have to fill address which is optional if you entered any field then all field will required
+* you have to fill address which is optional if you entered any field then all field will required after updation of current orgnaization it will be active 
 * 1. you have to fill addressLine1 which is required
 * 2. you have to fill addressLine1 which is optional
 * 3. you have to fill city which is required

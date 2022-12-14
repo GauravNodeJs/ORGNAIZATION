@@ -21,7 +21,7 @@ const validation = joi.object({
     
 });
 const loginValidation=joi.object({
-    userName: joi.string().min(3).max(10).trim(true).required(),
+    userName: joi.string().min(3).max(20).trim(true).required(),
     password: joi.string().min(8).required()
 })
 
