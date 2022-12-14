@@ -26,7 +26,7 @@ const loginValidation=joi.object({
 })
 
 const updateValidation = joi.object({
-    orgName:joi.string().optional(),
+    orgName:joi.string().required(),
     address:joi.object({
         addressLine1:joi.string().required(),
         addressLine2:joi.string().required(),
@@ -46,7 +46,8 @@ const orgValidation=joi.object({
         country:joi.string().required(),
         zipCode:joi.number().required(),
     }).optional()
-});
+})
+
 
 const schemaValidator = (route, method) => {
     let obj = {}

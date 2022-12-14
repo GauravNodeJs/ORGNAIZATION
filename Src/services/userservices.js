@@ -87,9 +87,12 @@ class UserService {
   async updateUser(req, res) {
     try{
       const extUser = await user.findOne({ _id: req.user._id });
-        if(!extUser.changePassword) {
+      if(!req.body){
+        res.send("cannot update empty field")
+      }
+      if(!extUser.changePassword) {
          delete req.body.password
-        }   
+      }   
       const updatedUser=await user.findOneAndUpdate(req.user._id, req.body, { new: true })
         .then((item) => {
         let resPayload = {
