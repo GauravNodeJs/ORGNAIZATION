@@ -52,11 +52,6 @@ class Orgnaization{
               },
             },
             {
-              $match: {
-                userName: "gaurav",
-              },
-            },
-            {
               $project: {
                 _id: 0,
                 by: "$firstName",
@@ -67,6 +62,7 @@ class Orgnaization{
               },
             },
           ]);
+          console.log(userData)
           let resPayload = {
             message: "your orgs",
             payload: userData,
